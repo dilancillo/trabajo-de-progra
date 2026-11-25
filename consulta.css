@@ -1,0 +1,59 @@
+
+@import url("base.css");
+
+body {
+    background: linear-gradient(135deg, #173d2d, #10231c);
+}
+
+.pagina {
+    max-width: 750px;
+}
+
+.pagina > p {
+    font-family: Arial, sans-serif;
+    margin-bottom: 25px;
+}
+
+#consultar {
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.carta-guardada {
+    text-align: left;
+    background: #fffaf0;
+    padding: 25px;
+    border: 2px dashed #c4a16b;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+.carta-guardada h2 {
+    text-align: center;
+}
+
+.carta-guardada h3 {
+    margin: 20px 0 10px;
+    color: #24583d;
+}
+
+#mensajeGuardado {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    line-height: 1.8;
+    font-family: Georgia, serif;
+}
+
+.volver {
+    display: inline-block;
+    margin-top: 20px;
+    max-width: 300px;
+    text-align: center;
+}
+
+#aviso {
+    color: #a12626;
+    font-weight: bold;
+}

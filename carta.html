@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta para Santa</title>
+    <link rel="stylesheet" href="css/carta.css">
+    <script src="js/navidad.js" defer></script>
+    <script src="js/carta.js" defer></script>
+</head>
+<body>
+
+    <video class="video-fondo" autoplay muted loop playsinline>
+    <source src="vid/3565-172488151.mp4" type="video/mp4">
+</video>
+
+<div class="capa-oscura"></div>
+
+    <div class="nieve"></div>
+
+    <main class="contenedor pagina">
+
+        <h1>✉️ Carta para Santa</h1>
+
+        <p>¡Hola! Escribe tu carta y cuéntale a Santa tus deseos.</p>
+
+        <form id="formulario">
+
+            <label for="nombre">Tu nombre:</label>
+            <input type="text" id="nombre"
+                   placeholder="Escribe tu nombre" required>
+
+            <label for="edad">Tu edad:</label>
+            <input type="number" id="edad"
+                   placeholder="Escribe tu edad"
+                   min="1" max="120" required>
+
+            <label for="mensaje">Tu carta:</label>
+            <textarea id="mensaje"
+                placeholder="Querido Santa Claus..."
+                required></textarea>
+
+            <button type="submit" class="boton rojo">
+                🎅 Enviar carta
+            </button>
+
+            <p id="resultado"></p>
+
+        </form>
+
+        <a href="index.html" class="boton verde volver">
+            🏠 Volver al menú
+        </a>
+
+    </main>
+
+    <div class="personaje nieve-personaje">☃️</div>
+    <div class="personaje santa">🎅</div>
+
+    <footer>Santa está esperando tu carta ❤️</footer>
+
+</body>
+</html>

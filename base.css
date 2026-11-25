@@ -1,0 +1,238 @@
+.video-fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -3;
+}
+
+.capa-oscura {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 20, 12, 0.55);
+    z-index: -2;
+    pointer-events: none;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: clamp(45px, 7vw, 75px);
+    font-weight: normal;
+    color: #24583d;
+    letter-spacing: 1px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Georgia, serif;
+    background:
+      radial-gradient(circle at top, #345447, transparent 65%),
+      linear-gradient(135deg, #102b22, #172c24, #081b17);
+    color: #263b30;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 15px;
+}
+
+
+
+.contenedor {
+    width: min(100%, 850px);
+    background: rgba(255, 247, 235, 0.96);
+    padding: 55px 35px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 15px 50px rgba(0,0,0,.35);
+    position: relative;
+    z-index: 2;
+}
+
+
+
+h1 {
+    color: #17442f;
+    font-size: clamp(30px, 6vw, 48px);
+    letter-spacing: 2px;
+}
+
+h2 {
+    color: #17442f;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.7;
+}
+
+
+
+.botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 35px;
+}
+
+.boton {
+    width: min(100%, 445px);
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+    border-radius: 18px;
+    transition: .3s;
+    border: 2px solid transparent;
+}
+
+.boton:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 20px #0003;
+}
+
+.rojo {
+    background: #b5262c;
+}
+
+.verde {
+    background: #24583d;
+}
+
+.dorado {
+    background: transparent;
+    border-color: #bd9658;
+    color: #21432f;
+}
+
+
+
+.encabezado {
+    margin-bottom: 35px;
+}
+
+.corona {
+    font-size: 45px;
+}
+
+.adorno {
+    color: #ad8a4d;
+    font-size: 25px;
+    margin-top: 18px;
+}
+
+.bienvenida {
+    font-family: Arial, sans-serif;
+    font-size: 21px;
+    margin: 20px 0;
+}
+
+
+
+.personaje {
+    position: fixed;
+    bottom: 12px;
+    font-size: 75px;
+    z-index: 5;
+    animation: balanceo 2.5s ease-in-out infinite;
+    pointer-events: none;
+}
+
+.santa {
+    right: 15px;
+    animation: caminar 4s ease-in-out infinite;
+}
+
+.nieve-personaje {
+    left: 15px;
+}
+
+@keyframes balanceo {
+    0%, 100% { transform: rotate(-7deg) translateY(0); }
+    50% { transform: rotate(7deg) translateY(-12px); }
+}
+
+@keyframes caminar {
+    0%, 100% { transform: translateX(0) rotate(0); }
+    25% { transform: translateX(-15px) rotate(-5deg); }
+    50% { transform: translateX(-25px) rotate(5deg); }
+    75% { transform: translateX(-10px) rotate(-5deg); }
+}
+
+/* Nieve cayendo */
+
+.nieve {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.copo {
+    position: absolute;
+    top: -20px;
+    color: white;
+    animation: caer linear infinite;
+    opacity: .8;
+}
+
+@keyframes caer {
+    to {
+        transform: translateY(110vh) rotate(360deg);
+    }
+}
+
+/* Pie de página */
+
+footer {
+    position: fixed;
+    bottom: 12px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    z-index: 4;
+    font-size: 14px;
+    pointer-events: none;
+}
+
+
+
+@media (max-width: 600px) {
+    .contenedor {
+        padding: 35px 20px;
+    }
+
+    .personaje {
+        font-size: 48px;
+    }
+
+    footer {
+        font-size: 11px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+    }
+}

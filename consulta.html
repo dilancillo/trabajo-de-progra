@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta tu carta</title>
+    <link rel="stylesheet" href="css/consulta.css">
+    <script src="js/navidad.js" defer></script>
+    <script src="js/carta.js" defer></script>
+</head>
+<body>
+
+    <video class="video-fondo" autoplay muted loop playsinline>
+    <source src="vid/3565-172488151.mp4" type="video/mp4">
+</video>
+
+<div class="capa-oscura"></div>
+
+    <div class="nieve"></div>
+
+    <main class="contenedor pagina">
+
+        <h1>🔎 Consulta tu carta</h1>
+
+        <p>Consulta la carta que enviaste a Santa Claus.</p>
+
+        <button id="consultar" class="boton verde">
+            🎄 Consultar carta
+        </button>
+
+        <section id="datos" class="carta-guardada" hidden>
+
+            <h2>🎅 Carta recibida</h2>
+
+            <p><strong>Nombre:</strong> <span id="nombreGuardado"></span></p>
+
+            <p><strong>Edad:</strong> <span id="edadGuardada"></span></p>
+
+            <h3>Mensaje:</h3>
+
+            <div id="mensajeGuardado"></div>
+
+        </section>
+
+        <p id="aviso"></p>
+
+        <a href="index.html" class="boton rojo volver">
+            🏠 Volver al menú
+        </a>
+
+    </main>
+
+    <div class="personaje nieve-personaje">☃️</div>
+    <div class="personaje santa">🎅</div>
+
+    <footer>El buzón mágico de Santa Claus ✨</footer>
+
+</body>
+</html>
