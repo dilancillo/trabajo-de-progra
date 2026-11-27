@@ -41,6 +41,17 @@ body {
     pointer-events: none;
 }
 
+.contador-navidad {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    z-index: 9999;
+    width: 350px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
 @keyframes impacto {
     0% {
         top: -150px;
